@@ -180,7 +180,7 @@ import net.minecraftforge.fluids.FluidRegistry;
         name = MOD_NAME,
         version = VERSION,
         dependencies =
-                "after:endercore;after:MineFactoryReloaded;after:Forestry;after:Waila@[1.5.8,);after:Thaumcraft;after:appliedenergistics2@[rv2-beta-8,);after:chisel",
+                "after:endercore;after:MineFactoryReloaded;after:Forestry;after:Waila@[1.5.8,);after:Thaumcraft;after:appliedenergistics2@[rv2-beta-8,);after:chisel;after:etfuturum",
         guiFactory = "crazypants.enderio.config.ConfigFactoryEIO")
 public class EnderIO {
 
