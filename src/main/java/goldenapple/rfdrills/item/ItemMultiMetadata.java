@@ -107,7 +107,7 @@ public class ItemMultiMetadata extends Item {
     @Override
     public String getUnlocalizedName(ItemStack itemStack) {
         return itemStack.getItemDamage() < names.length
-                ? "item." + EnderIO.MODID + ":" + names[itemStack.getItemDamage()]
+                ? "item." + EnderIO.MODID.toLowerCase() + ":" + names[itemStack.getItemDamage()]
                 : getUnlocalizedName();
     }
 }

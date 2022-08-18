@@ -12,15 +12,15 @@ public abstract class AbstractSoulUpgrade {
 
     public void addRecipeDescription(ItemStack itemStack, List<String> list) {
         list.add("  " + EnumChatFormatting.DARK_AQUA + EnumChatFormatting.ITALIC
-                + StatCollector.translateToLocal("rfdrills.upgrade." + getUnlocalizedName() + ".recipe"
+                + StatCollector.translateToLocal("enderio.upgrade." + getUnlocalizedName() + ".recipe"
                         + Integer.toString(SoulUpgradeHelper.getUpgradeLevel(itemStack, this) + 1)));
     }
 
     public void addDescription(ItemStack itemStack, List<String> list) {
         int i = 1;
-        while (StatCollector.canTranslate("rfdrills.upgrade." + getUnlocalizedName() + ".desc"
+        while (StatCollector.canTranslate("enderio.upgrade." + getUnlocalizedName() + ".desc"
                 + SoulUpgradeHelper.getUpgradeLevel(itemStack, this) + "." + i)) {
-            list.add(StatCollector.translateToLocal("rfdrills.upgrade." + getUnlocalizedName() + ".desc"
+            list.add(StatCollector.translateToLocal("enderio.upgrade." + getUnlocalizedName() + ".desc"
                     + SoulUpgradeHelper.getUpgradeLevel(itemStack, this) + "." + i));
             i++;
         }

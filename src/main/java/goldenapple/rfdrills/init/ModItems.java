@@ -29,8 +29,8 @@ public class ModItems {
                 EnumRarity.uncommon,
                 EnumRarity.rare);
         componentEIO.setTooltips(
-                null, null, null, null, null, new String[] {"rfdrills.soul_upgrade.tooltip"}, new String[] {
-                    "rfdrills.soul_upgrade.tooltip"
+                null, null, null, null, null, new String[] {"enderio.soul_upgrade.tooltip"}, new String[] {
+                    "enderio.soul_upgrade.tooltip"
                 });
 
         GameRegistry.registerItem(componentEIO, Names.COMPONENT_EIO);

@@ -18,8 +18,8 @@ public class UpgradeEmpowered extends AbstractSoulUpgrade {
 
     @Override
     public void addDescription(ItemStack itemStack, List<String> list) {
-        list.add(StatCollector.translateToLocal("rfdrills.upgrade.empowered.desc1"));
-        list.add(StatCollector.translateToLocal("rfdrills.upgrade.empowered.desc2"));
+        list.add(StatCollector.translateToLocal("enderio.upgrade.empowered.desc1"));
+        list.add(StatCollector.translateToLocal("enderio.upgrade.empowered.desc2"));
     }
 
     @Override

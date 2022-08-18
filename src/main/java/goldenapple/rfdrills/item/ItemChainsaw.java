@@ -145,17 +145,17 @@ public class ItemChainsaw extends ItemAxe implements IEnergyTool, IEqualityOverr
         if (MiscUtil.isShiftPressed()) {
             list.add(StringHelper.writeEnergyPerBlockInfo(getEnergyPerUse(stack)));
             if (tier.hasModes) list.add(writeModeInfo(stack));
-            list.add(StatCollector.translateToLocal("rfdrills.chainsaw.tooltip"));
-            if (tier.canBreak) list.add(StatCollector.translateToLocal("rfdrills.can_break.tooltip"));
+            list.add(StatCollector.translateToLocal("enderio.chainsaw.tooltip"));
+            if (tier.canBreak) list.add(StatCollector.translateToLocal("enderio.can_break.tooltip"));
             if (toolMaterial.getEnchantability() > 0)
-                list.add(StatCollector.translateToLocal("rfdrills.enchantable.tooltip"));
+                list.add(StatCollector.translateToLocal("enderio.enchantable.tooltip"));
             if (tier.hasModes) {
                 if (!ConfigHandler.modeShiftClickEIO)
                     list.add(StringHelper.writeModeSwitchInfo(
-                            "rfdrills.chainsaw_has_modes.tooltip", KeyBindingEmpower.instance));
-                else list.add(StatCollector.translateToLocal("rfdrills.chainsaw_has_modes.sneak.tooltip"));
+                            "enderio.chainsaw_has_modes.tooltip", KeyBindingEmpower.instance));
+                else list.add(StatCollector.translateToLocal("enderio.chainsaw_has_modes.sneak.tooltip"));
             }
-            if (MiscUtil.isItemSilent(stack)) list.add(StatCollector.translateToLocal("rfdrills.silent.tooltip"));
+            if (MiscUtil.isItemSilent(stack)) list.add(StatCollector.translateToLocal("enderio.silent.tooltip"));
         } else list.add(cofh.lib.util.helpers.StringHelper.shiftForDetails());
     }
 
@@ -212,8 +212,8 @@ public class ItemChainsaw extends ItemAxe implements IEnergyTool, IEqualityOverr
     public String writeModeInfo(ItemStack stack) {
         if (!tier.hasModes) return "";
 
-        if (isEmpowered(stack)) return StatCollector.translateToLocal("rfdrills.shears_on.mode");
-        else return StatCollector.translateToLocal("rfdrills.shears_off.mode");
+        if (isEmpowered(stack)) return StatCollector.translateToLocal("enderio.shears_on.mode");
+        else return StatCollector.translateToLocal("enderio.shears_off.mode");
     }
 
     /* IEnergyContainerItem */

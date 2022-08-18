@@ -174,12 +174,12 @@ public class ItemFluxHoe extends ItemTool implements IEnergyTool {
 
             if (MiscUtil.isShiftPressed()) {
                 list.add(StringHelper.writeEnergyPerBlockInfo(getEnergyPerUse(stack)));
-                list.add(StatCollector.translateToLocal("rfdrills.hoe.tooltip"));
+                list.add(StatCollector.translateToLocal("enderio.hoe.tooltip"));
                 if (tier.canBreak) {
-                    list.add(StatCollector.translateToLocal("rfdrills.can_break.tooltip"));
+                    list.add(StatCollector.translateToLocal("enderio.can_break.tooltip"));
                 }
                 if (toolMaterial.getEnchantability() > 0) {
-                    list.add(StatCollector.translateToLocal("rfdrills.enchantable.tooltip"));
+                    list.add(StatCollector.translateToLocal("enderio.enchantable.tooltip"));
                 }
             } else {
                 list.add(cofh.lib.util.helpers.StringHelper.shiftForDetails());

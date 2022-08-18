@@ -335,7 +335,7 @@ public class ItemSoulCrusher extends ItemTool implements IEnergyTool, IEqualityO
                 if (upgrade.isUpgradeAvailable(stack)) {
                     if (!printedOneRecipeMessage) {
                         list.add(EnumChatFormatting.YELLOW
-                                + StatCollector.translateToLocal("rfdrills.soul_upgrade.recipe"));
+                                + StatCollector.translateToLocal("enderio.soul_upgrade.recipe"));
                         printedOneRecipeMessage = true;
                     }
 
@@ -348,12 +348,12 @@ public class ItemSoulCrusher extends ItemTool implements IEnergyTool, IEqualityO
 
             if (tier.hasModes) {
                 if (ConfigHandler.modeShiftClickEIO)
-                    list.add(StatCollector.translateToLocal("rfdrills.drill_has_modes.sneak.tooltip"));
+                    list.add(StatCollector.translateToLocal("enderio.drill_has_modes.sneak.tooltip"));
                 else
                     list.add(StringHelper.writeModeSwitchInfo(
-                            "rfdrills.drill_has_modes.tooltip", KeyBindingEmpower.instance));
+                            "enderio.drill_has_modes.tooltip", KeyBindingEmpower.instance));
             }
-            if (MiscUtil.isItemSilent(stack)) list.add(StatCollector.translateToLocal("rfdrills.silent.tooltip"));
+            if (MiscUtil.isItemSilent(stack)) list.add(StatCollector.translateToLocal("enderio.silent.tooltip"));
         } else {
             for (Map.Entry<AbstractSoulUpgrade, Byte> entry :
                     SoulUpgradeHelper.getUpgrades(stack).entrySet())
@@ -430,16 +430,16 @@ public class ItemSoulCrusher extends ItemTool implements IEnergyTool, IEqualityO
     public String writeModeInfo(ItemStack stack) {
         switch (getMode(stack)) {
             case 0:
-                return StatCollector.translateToLocal("rfdrills.1x1x1.mode");
+                return StatCollector.translateToLocal("enderio.1x1x1.mode");
             case 1:
-                return StatCollector.translateToLocal("rfdrills.1x3x1.mode");
+                return StatCollector.translateToLocal("enderio.1x3x1.mode");
             case 2:
-                return StatCollector.translateToLocal("rfdrills.3x3x3.mode");
+                return StatCollector.translateToLocal("enderio.3x3x3.mode");
             case 3:
-                return StatCollector.translateToLocal("rfdrills.5x5x5.mode");
+                return StatCollector.translateToLocal("enderio.5x5x5.mode");
             default:
                 LogHelper.warn("Illegal drill mode!");
-                return StatCollector.translateToLocal("rfdrills.1x1x1.mode");
+                return StatCollector.translateToLocal("enderio.1x1x1.mode");
         }
     }
 

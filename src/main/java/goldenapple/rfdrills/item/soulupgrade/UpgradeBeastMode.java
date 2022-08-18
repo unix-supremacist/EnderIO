@@ -21,10 +21,10 @@ public class UpgradeBeastMode extends AbstractSoulUpgrade {
     public void addDescription(ItemStack itemStack, List<String> list) {
         if (SoulUpgradeHelper.getUpgradeLevel(itemStack, SoulUpgrades.upgradeFork) > 0) {
             list.add(StatCollector.translateToLocal(
-                    "rfdrills.upgrade.beast_mode.desc" + SoulUpgradeHelper.getUpgradeLevel(itemStack, this) + ".fork"));
+                    "enderio.upgrade.beast_mode.desc" + SoulUpgradeHelper.getUpgradeLevel(itemStack, this) + ".fork"));
         } else {
             list.add(StatCollector.translateToLocal(
-                    "rfdrills.upgrade.beast_mode.desc" + SoulUpgradeHelper.getUpgradeLevel(itemStack, this)));
+                    "enderio.upgrade.beast_mode.desc" + SoulUpgradeHelper.getUpgradeLevel(itemStack, this)));
         }
     }
 

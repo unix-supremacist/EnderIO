@@ -18,8 +18,8 @@ import tonius.simplyjetpacks.setup.Packs;
 
 public class SimplyJetpacks {
 
-    public static final String PREFIX = EnderIO.MODID + ".";
-    public static final String RESOURCE_PREFIX = EnderIO.MODID + ":";
+    public static final String PREFIX = EnderIO.MODID.toLowerCase() + ".";
+    public static final String RESOURCE_PREFIX = EnderIO.MODID.toLowerCase() + ":";
 
     @SidedProxy(
             clientSide = "tonius.simplyjetpacks.client.ClientProxy",

@@ -4,6 +4,7 @@ import cofh.lib.util.helpers.StringHelper;
 import cpw.mods.fml.common.registry.GameRegistry;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
+import crazypants.enderio.EnderIO;
 import crazypants.enderio.EnderIOTab;
 import java.util.HashMap;
 import java.util.List;
@@ -64,7 +65,7 @@ public class ItemMeta extends ItemRegistered {
     public String getUnlocalizedName(ItemStack itemStack) {
         MetaItem metaItem = this.getMetaItem(itemStack);
         if (metaItem != null) {
-            return "item.simplyjetpacks." + metaItem.name;
+            return "item." + EnderIO.MODID.toLowerCase() + "." + metaItem.name;
         }
         return super.getUnlocalizedName();
     }

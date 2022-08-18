@@ -24,11 +24,11 @@ public class StringHelper {
     }
 
     public static String writeUpgradeInfo(int level, AbstractSoulUpgrade upgrade) {
-        String upgradeName = StatCollector.translateToLocal("rfdrills.upgrade." + upgrade.getUnlocalizedName());
+        String upgradeName = StatCollector.translateToLocal("enderio.upgrade." + upgrade.getUnlocalizedName());
         if (level == 1) {
             return upgradeName;
         } else {
-            String levelName = StatCollector.translateToLocal("rfdrills.level." + level);
+            String levelName = StatCollector.translateToLocal("enderio.level." + level);
             return upgradeName + " " + levelName;
         }
     }
@@ -37,12 +37,12 @@ public class StringHelper {
         String energyFormatted = (green ? EnumChatFormatting.GREEN : EnumChatFormatting.RED)
                 + formatEnergy(energy)
                 + EnumChatFormatting.RESET;
-        return StatCollector.translateToLocalFormatted("rfdrills.energy_per_block.tooltip", energyFormatted);
+        return StatCollector.translateToLocalFormatted("enderio.energy_per_block.tooltip", energyFormatted);
     }
 
     public static String writeEnergyPerBlockInfo(int energy) {
         String energyFormatted = formatEnergy(energy);
-        return StatCollector.translateToLocalFormatted("rfdrills.energy_per_block.tooltip", energyFormatted);
+        return StatCollector.translateToLocalFormatted("enderio.energy_per_block.tooltip", energyFormatted);
     }
 
     public static String writeEnergyInfo(int energyLevel, int maxEnergy) {

@@ -19,9 +19,9 @@ public class ItemReplacement extends ItemMultiMetadata {
     @SuppressWarnings("unchecked")
     public void addInformation(ItemStack itemStack, EntityPlayer player, List list, boolean iHaveNoIdea) {
         if (MiscUtil.isShiftPressed()) {
-            list.add(StatCollector.translateToLocalFormatted("rfdrills.replacement.tooltip1", modName));
-            list.add(StatCollector.translateToLocal("rfdrills.replacement.tooltip2"));
-            list.add(StatCollector.translateToLocal("rfdrills.replacement.tooltip3"));
+            list.add(StatCollector.translateToLocalFormatted("enderio.replacement.tooltip1", modName));
+            list.add(StatCollector.translateToLocal("enderio.replacement.tooltip2"));
+            list.add(StatCollector.translateToLocal("enderio.replacement.tooltip3"));
         } else list.add(StringHelper.shiftForDetails());
     }
 }

@@ -206,18 +206,18 @@ public class ItemDrill extends ItemTool implements IEnergyTool, IEqualityOverrid
         if (MiscUtil.isShiftPressed()) {
             list.add(StringHelper.writeEnergyPerBlockInfo(getEnergyPerUseWithMode(stack)));
             if (tier.hasModes) list.add(writeModeInfo(stack));
-            list.add(StatCollector.translateToLocal("rfdrills.drill.tooltip"));
-            if (tier.canBreak) list.add(StatCollector.translateToLocal("rfdrills.can_break.tooltip"));
+            list.add(StatCollector.translateToLocal("enderio.drill.tooltip"));
+            if (tier.canBreak) list.add(StatCollector.translateToLocal("enderio.can_break.tooltip"));
             if (toolMaterial.getEnchantability() > 0)
-                list.add(StatCollector.translateToLocal("rfdrills.enchantable.tooltip"));
+                list.add(StatCollector.translateToLocal("enderio.enchantable.tooltip"));
             if (tier.hasModes) {
                 if (MiscUtil.shouldModeShiftClick(this))
-                    list.add(StatCollector.translateToLocal("rfdrills.drill_has_modes.sneak.tooltip"));
+                    list.add(StatCollector.translateToLocal("enderio.drill_has_modes.sneak.tooltip"));
                 else
                     list.add(StringHelper.writeModeSwitchInfo(
-                            "rfdrills.drill_has_modes.tooltip", KeyBindingEmpower.instance));
+                            "enderio.drill_has_modes.tooltip", KeyBindingEmpower.instance));
             }
-            if (MiscUtil.isItemSilent(stack)) list.add(StatCollector.translateToLocal("rfdrills.silent.tooltip"));
+            if (MiscUtil.isItemSilent(stack)) list.add(StatCollector.translateToLocal("enderio.silent.tooltip"));
         } else list.add(cofh.lib.util.helpers.StringHelper.shiftForDetails());
     }
 
@@ -270,8 +270,8 @@ public class ItemDrill extends ItemTool implements IEnergyTool, IEqualityOverrid
     public String writeModeInfo(ItemStack stack) {
         if (!tier.hasModes) return "";
 
-        if (isEmpowered(stack)) return StatCollector.translateToLocal("rfdrills.1x3x1.mode");
-        else return StatCollector.translateToLocal("rfdrills.1x1x1.mode");
+        if (isEmpowered(stack)) return StatCollector.translateToLocal("enderio.1x3x1.mode");
+        else return StatCollector.translateToLocal("enderio.1x1x1.mode");
     }
 
     /* IEnergyContainerItem */
